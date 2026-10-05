@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #212529;
+}
+
+.navbar {
+    min-height: 72px;
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.hero-section {
+    background: linear-gradient(
+        135deg,
+        #f0f6ff 0%,
+        #ffffff 60%,
+        #eef4ff 100%
+    );
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.min-vh-75 {
+    min-height: 600px;
+}
+
+.hero-section h1 {
+    line-height: 1.15;
+}
+
+.search-box {
+    max-width: 650px;
+}
+
+.category-card {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 16px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.category-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #e7f0ff;
+    color: #0d6efd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.event-card {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #e9ecef;
+    transition: 0.3s ease;
+    height: 100%;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.event-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.event-placeholder {
+    height: 100%;
+    background: linear-gradient(
+        135deg,
+        #0d6efd,
+        #6f42c1
+    );
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.cta-section {
+    background-color: #f0f6ff;
+}
+
+.btn {
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        min-height: 500px;
+    }
+
+    .min-vh-75 {
+        min-height: 500px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.4rem;
+    }
+
+    .search-box {
+        margin-top: 20px;
+    }
+
+}
